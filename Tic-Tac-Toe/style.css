@@ -2,9 +2,42 @@ html {
     width: 50%;
     margin: auto;
 }
-.layout {
+.title {
     display: grid;
-    gap: 20px;
+    margin-right: 1.2vw;
+    gap: 0vw 23vw;
+    align-items: center;
+    grid: 
+    "title a"
+    "title turn";
+}
+.title h1 {
+    grid-area: title;
+    font-size: 3vw;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    font-family: permanent marker;
+}
+.title a {
+    grid-area: a;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 1.5vw;
+    background-color: red;
+    padding: .3vw .7vw;
+    border: black solid 2px;
+}
+.title h3 {
+    display: inline;
+    font-size: 1.7vw;
+    margin: 0px;
+    font-family: permanent marker;
+    grid-area: turn;
+}
+#layout {
+    display: grid;
+    gap: 1.3vw;
     grid: 
     "btn1 btn2 btn3"
     "btn4 btn5 btn6"
@@ -44,4 +77,16 @@ button:hover {
 }
 .btn9 {
     grid-area: btn9;
+}
+#xwin {
+    display: none;
+    font-family: permanent marker;
+    font-size: 4vw;
+    text-align: center;
+}
+#owin {
+    display: none;
+    font-family: permanent marker;
+    font-size: 4vw;
+    text-align: center;
 }
